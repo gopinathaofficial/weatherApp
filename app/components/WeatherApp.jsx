@@ -9,7 +9,7 @@ const WeatherApp = () => {
     const [error, setError] = useState('');
 
     const fetchWeather = async (city) => {
-        const API_KEY = '34e38b69e513710ae6c1c785d96c4dcf';
+        const API_KEY =  process.env.NEXT_PUBLIC_WEATHER_API_KEY;
         const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
 
         try {
