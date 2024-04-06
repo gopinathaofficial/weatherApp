@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.autocomplete-list {
+  max-height: 200px !important; /* Set the maximum height */
+  overflow-y: auto; /* Add scrollbar when content overflows */
+}
